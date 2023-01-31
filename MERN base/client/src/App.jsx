@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState, useEffect } from "react";
 
 //functions
 import { getTest } from "./api/test";
+import Login from "./pages/Login";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Signup from "./pages/Signup";
 
 function App() {
-  const [ data, setData ] = useState("Hello World!");
-
-  useEffect(() => {
-    getTest().then((res) => {
-      setData(res.message);
-    })
-    .catch((err) => console.log(err));
-  }, []);
+  
 
   return (
-    <div className="App">
-      <h1>{data}</h1>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path='/sign-up' element={<Signup/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
