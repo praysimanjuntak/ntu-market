@@ -1,12 +1,12 @@
-import { Typography, TextField, Button, Link } from '@mui/material';
-import { Stack } from '@mui/system';
-import React from 'react';
+// import { Typography, Button, Link } from '@chakra-ui/react';
+// import { Stack } from '@chakra-ui/react';
+// import React from 'react';
 
 
 const Login = () => {
     return (
     <div className="container">
-        <div className="tagline">
+        {/* <div className="tagline">
             <Stack alignItems="center" mt={5}>    
                 <Typography variant='h2' component="h2">Reduce.</Typography>
                 <Typography variant='h2' component="h2">Reuse. </Typography>
@@ -27,7 +27,7 @@ const Login = () => {
             
 
 
-        </div>
+        </div> */}
  
     </div> 
     
