@@ -1,7 +1,7 @@
 
 //functions
 import * as React from 'react'
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Container } from '@chakra-ui/react';
 import { getTest } from "./api/test";
 import Login from "./pages/Login";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -16,11 +16,20 @@ function App() {
 
   return (
     <ChakraProvider>
-      <div>
+      <div >
         <Navbar/>
-        <PhishingAlert/>
-        <Categories/>
-        <FeaturedItems/>
+        <Container
+        mt='0'
+        mb='0'
+        ml='0'
+        mr='0'
+        minWidth='100%'
+          >
+          <PhishingAlert/>
+          <Categories/>
+          <FeaturedItems/>
+        </Container>
+        
         <Router>
           <Routes>
             <Route path="/login" element={<Login/>}/>
