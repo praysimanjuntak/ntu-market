@@ -1,6 +1,7 @@
 import React from "react";
 import { SimpleGrid, Card, Box, Text, Heading, GridItem, CardBody, CardFooter, Image, VStack, HStack, Avatar, Divider} from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import iphone from '../media/iphone.png'
 
 function FeaturedItems() {
     return(
@@ -19,7 +20,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -40,7 +41,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -61,7 +62,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -82,7 +83,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -103,7 +104,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -124,7 +125,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -145,7 +146,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -166,7 +167,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -187,7 +188,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -208,7 +209,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -229,7 +230,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -250,7 +251,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -271,7 +272,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -292,7 +293,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -313,7 +314,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -334,7 +335,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -355,7 +356,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
@@ -376,7 +377,7 @@ function FeaturedItems() {
                     <a href="">
                         <Card>
                             <CardBody display='flex' flexDirection='column' alignItems='center'>
-                                <Image h='8em' w='8em' mb='5'></Image>
+                                <Image src={iphone} h='8em' w='8em' mb='5'></Image>
                                 <VStack display='flex' alignItems='flex-start'>
                                     <Heading size='xs'>Iphone 14 Pro 256GB</Heading>
                                     <HStack spacing={5} display='flex' align='center'>
