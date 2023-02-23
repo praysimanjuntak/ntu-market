@@ -3,7 +3,7 @@ import { Box, Text, Heading, Flex } from "@chakra-ui/react";
 
 function PhishingAlert() {
     return(
-        <Flex justify='center' m='1em'>
+        <Flex justify='center' mt='0' paddingTop='1em' paddingBottom={'1em'}>
             <Box 
                 bg='#fffafa' 
                 borderWidth='1px' 
