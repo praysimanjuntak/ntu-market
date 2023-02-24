@@ -3,12 +3,12 @@ import { Container } from "@chakra-ui/react";
 import PhishingAlert from '../components/PhishingAlert';
 import Categories from '../components/Categories';
 import FeaturedItems from '../components/FeaturedItems';
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
-function Home(){
+function House(){
     return(
       <>
-      <Navbar/>
+      <Header/>
         <Container
         mt='0'
         mb='0'
@@ -23,4 +23,4 @@ function Home(){
       </>
     )
 }
-export default Home;
+export default House;

@@ -1,37 +1,34 @@
-import { Typography, TextField, Button, Link } from '@mui/material';
-import { Stack } from '@mui/system';
-import React from 'react';
+import { Img, FormControl, FormLabel, Input, Stack } from "@chakra-ui/react";
+import Background from "../components/Background";
+import Footer from "../components/Footer";
+import MyButton from "../components/MyButton";
 
+function Login() {
 
-const Login = () => {
-    return (
-    <div className="container">
-        <div className="tagline">
-            <Stack alignItems="center" mt={5}>    
-                <Typography variant='h2' component="h2">Reduce.</Typography>
-                <Typography variant='h2' component="h2">Reuse. </Typography>
-                <Typography variant='h2' component="h2" color="primary">Resell. </Typography>
-            </Stack>
-        </div>
-
-
-        <div className="inputfields">
-            <Stack spacing={2} alignItems="center">
-                <TextField id="outlined-basic" label="Email" variant="outlined" />
-                <TextField id="outlined-password-input" label="Password" variant="outlined" />
-                <Button variant='contained'>Sign In</Button>
-                <Link href='/sign-up' underline='hover'>
-                    <Typography variant="subtitle2">New User? Sign Up</Typography>
-                </Link>
-            </Stack>
-            
-
-
-        </div>
- 
-    </div> 
+  return (
+    <>
+    <Background
+        justifyContent="center"
+        alignItems="center"
+        isDarkBackground
+        backgroundColor="#313690"
+        >
+        <Img src ='/LOGO.png'></Img>
+        <FormControl>
+            <FormLabel>Username</FormLabel>
+            <Input type='username' />
+            <FormLabel>Password</FormLabel>
+            <Input type='password' />
+        </FormControl>
+        <Stack color='white' textColor='black'>
+            {MyButton('home', 'Login')}
+        </Stack>
+        
+    </Background>
     
-    );
+    <Footer/>
+    </>
+  );
 }
- 
+
 export default Login;

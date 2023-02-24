@@ -1,24 +1,43 @@
-import { Typography, TextField, Button, Link } from '@mui/material';
-import { Stack } from '@mui/system';
-import React from 'react';
+import { Stack, Img } from "@chakra-ui/react";
+import Background from "../components/Background";
+import Footer from "../components/Footer";
+import { FormControl, FormLabel, Input, FormHelperText } from "@chakra-ui/react";
+import MyButton from "../components/MyButton";
 
-const Signup = () => {
-    return ( 
-    <div className="container">
-        <div className="inputfields">
-            <Stack spacing={2} alignItems="center" mt={10}>
-                <Typography variant='h2' component='h2'>Sign Up</Typography>
-                <TextField id="outlined-basic" label="Email" variant="outlined" />
-                <TextField id="outlined-password-input" label="Password" variant="outlined" />
-                <TextField id="outlined-password-input" label="Retype Password" variant="outlined" />
-                <Button variant='contained'>Sign Up</Button>
-                <Link href='/' underline='hover'>
-                    <Typography variant="subtitle2">Already have an account? Sign-in</Typography>
-                </Link>
-            </Stack>
-        </div>
-    </div>
-    );
+function SignUp() {
+
+  return (
+    <>
+    <Background
+        justifyContent="center"
+        alignItems="center"
+        isDarkBackground
+        backgroundColor="#313690"
+        >
+        <Img src ='/LOGO.png'></Img>
+        <FormControl>
+            <FormLabel>Username</FormLabel>
+            <Input type='username' />
+            <FormHelperText>Pick something fancy.</FormHelperText>
+            <FormLabel>Email address</FormLabel>
+            <Input type='email' />
+            <FormHelperText>We'll never share your email.</FormHelperText>
+            <FormLabel>Password</FormLabel>
+            <Input type='password' />
+            <FormHelperText>Shhhhhh.</FormHelperText>
+            <FormLabel>Confirm Password</FormLabel>
+            <Input type='email' />
+            <FormHelperText>We'll never tell a soul.</FormHelperText>
+        </FormControl>
+        <Stack color='white' textColor='black'>
+            {MyButton('authentication', 'Submit')}
+        </Stack>
+        
+    </Background>
+    
+    <Footer/>
+    </>
+  );
 }
- 
-export default Signup; 
+
+export default SignUp;
