@@ -1,5 +1,3 @@
-
-//functions
 import { getTest } from "./api/test";
 import Login from "./pages/Login";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -21,11 +19,7 @@ import Listings from './components/listings';
 import Reviews from './components/reviews';
 import Listing from './pages/Listing/Listing'
 import ConfirmationList from './pages/Listing/ConfirmationList'
-
-
 function App() {
-
-
   return (
     <ChakraProvider>
       <div >
