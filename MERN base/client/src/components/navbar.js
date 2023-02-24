@@ -19,9 +19,6 @@ import {
 import { HamburgerIcon, Search2Icon, BellIcon, EmailIcon, StarIcon } from '@chakra-ui/icons';
 import cart from '../media/shopping-cart.png'
 import { Link } from 'react-router-dom';
-
-
-
 function Navbar() {
 
   return (

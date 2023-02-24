@@ -17,8 +17,9 @@ import ConfirmationBuy from './pages/Product/ConfirmationBuy'
 import Profile from './pages/Profile';
 import Listings from './components/listings';
 import Reviews from './components/reviews';
-import Listing from './pages/Listing/Listing'
-import ConfirmationList from './pages/Listing/ConfirmationList'
+import Listing from './pages/Listing/Listing';
+import ConfirmationList from './pages/Listing/ConfirmationList';
+import {ChakraProvider} from "@chakra-ui/react";
 function App() {
   return (
     <ChakraProvider>
