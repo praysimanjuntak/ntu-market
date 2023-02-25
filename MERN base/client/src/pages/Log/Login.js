@@ -1,7 +1,7 @@
 import { Img, FormControl, FormLabel, Input, Stack } from "@chakra-ui/react";
-import Background from "../components/Background";
-import Footer from "../components/Footer";
-import MyButton from "../components/MyButton";
+import Background from "../../components/Background";
+import Footer from "../../components/Footer";
+import MyButton from "../../components/MyButton";
 
 function Login() {
 

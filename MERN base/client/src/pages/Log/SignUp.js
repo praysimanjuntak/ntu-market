@@ -1,8 +1,8 @@
 import { Stack, Img } from "@chakra-ui/react";
-import Background from "../components/Background";
-import Footer from "../components/Footer";
+import Background from "../../components/Background";
+import Footer from "../../components/Footer";
 import { FormControl, FormLabel, Input, FormHelperText } from "@chakra-ui/react";
-import MyButton from "../components/MyButton";
+import MyButton from "../../components/MyButton";
 
 function SignUp() {
 

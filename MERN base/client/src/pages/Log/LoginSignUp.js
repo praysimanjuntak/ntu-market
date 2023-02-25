@@ -1,9 +1,9 @@
 import { Avatar, Button, Img, HStack } from "@chakra-ui/react";
-import Background from "../components/Background";
-import Footer from "../components/Footer";
+import Background from "../../components/Background";
+import Footer from "../../components/Footer";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MyButton from "../components/MyButton";
+import MyButton from "../../components/MyButton";
 
 function LoginSignUp() {
 
