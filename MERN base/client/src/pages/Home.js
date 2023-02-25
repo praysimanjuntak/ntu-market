@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
 import PhishingAlert from '../components/PhishingAlert';
-import Categories from '../components/Categories';
-import FeaturedItems from '../components/FeaturedItems';
+import ListingCard from '../components/ListingCard';
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
+import Background from "../components/Background";
 function Home(){
     return(
       <>
@@ -17,9 +17,10 @@ function Home(){
         minWidth='100%'
           >
           <PhishingAlert/>
-          <Categories/>
-          <FeaturedItems/>
+        <ListingCard />
         </Container>
+        
+      <Footer/>
       </>
     )
 }

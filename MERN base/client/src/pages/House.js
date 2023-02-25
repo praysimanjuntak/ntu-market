@@ -4,7 +4,8 @@ import PhishingAlert from '../components/PhishingAlert';
 import Categories from '../components/Categories';
 import FeaturedItems from '../components/FeaturedItems';
 import Header from "../components/Header";
-
+import Footer from "../components/Footer";
+//might rename this to door
 function House(){
     return(
       <>
@@ -20,6 +21,7 @@ function House(){
           <Categories/>
           <FeaturedItems/>
         </Container>
+        <Footer/>
       </>
     )
 }
