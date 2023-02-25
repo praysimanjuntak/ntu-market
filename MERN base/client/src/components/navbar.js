@@ -19,6 +19,7 @@ import {
 import { HamburgerIcon, Search2Icon, BellIcon, EmailIcon, StarIcon } from '@chakra-ui/icons';
 import cart from '../media/shopping-cart.png'
 import { Link } from 'react-router-dom';
+//Navbar is used once users have logged in. Will be called header otherwise.
 function Navbar() {
 
   return (

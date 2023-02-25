@@ -1,9 +1,10 @@
 import { getTest } from "./api/test";
-import Login from "./pages/Login";
-import LoginSignUp from "./pages/LoginSignUp";
+import Login from "./pages/Log/Login";
+import LoginSignUp from "./pages/Log/LoginSignUp";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import SignUp from "./pages/SignUp";
-import Authentication from "./pages/Authentication";
+import { Navigate } from "react-router-dom";
+import SignUp from "./pages/Log/SignUp";
+import Authentication from "./pages/Log/Authentication";
 import MyProfile from './pages/MyProfile';
 import Home from './pages/Home';
 import Settings from './pages/Settings';
@@ -15,7 +16,7 @@ import Details from './pages/Product/Details'
 import Payment from './pages/Product/Payment';
 import Chat from './pages/Product/Chat';
 import ConfirmationBuy from './pages/Product/ConfirmationBuy'
-import Profile from './pages/Profile';
+import SellerProfile from './pages/SellerProfile';
 import Listings from './components/Listings';
 import Reviews from './components/Reviews';
 import Listing from './pages/Listing/Listing';
@@ -23,6 +24,8 @@ import ConfirmationList from './pages/Listing/ConfirmationList';
 import {ChakraProvider} from "@chakra-ui/react";
 import ModalIntro from "./pages/ModalIntro";
 import House from "./pages/House";
+import ErrorNotFound from "./pages/ErrorNotFound";
+
 function App() {
   return (
     <>
@@ -50,7 +53,7 @@ function App() {
             <Route path='chat' element={<Chat/>}/>
             <Route path='confirmationBuy' element={<ConfirmationBuy/>}/>
           </Route>
-          <Route path='/profile' element={<Profile/>}>
+          <Route path='/sellerProfile' element={<SellerProfile/>}>
             <Route path='listings' element={<Listings/>}/>
             <Route path='reviews' element={<Reviews/>}/>
           </Route>
@@ -58,6 +61,8 @@ function App() {
             <Route index element={<Listing/>}/>
             <Route path='confirmation' element={<ConfirmationList/>}/>
           </Route>
+          <Route path='*' element={<Navigate to='/404'/>}/>
+          <Route path='/404'element={<ErrorNotFound/>}/>
         </Routes>
         
     </ChakraProvider>

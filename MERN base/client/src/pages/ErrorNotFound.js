@@ -1,11 +1,8 @@
-import { Avatar, Button, Img } from "@chakra-ui/react";
+import { Text, Textarea } from "@chakra-ui/react";
 import Background from "../components/Background";
 import Footer from "../components/Footer";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import MyButton from "../components/MyButton";
 
-function Authentication() {
+function ErrorNotFound() {
 
   return (
     <>
@@ -15,7 +12,7 @@ function Authentication() {
         isDarkBackground
         backgroundColor="#313690"
         >
-        
+        <Text>NOT FOUND 404</Text>
     </Background>
     
     <Footer/>
@@ -23,4 +20,4 @@ function Authentication() {
   );
 }
 
-export default Authentication;
+export default ErrorNotFound;
