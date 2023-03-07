@@ -13,7 +13,6 @@ function LoginSignUp() {
         justifyContent="center"
         alignItems="center"
         isDarkBackground
-        backgroundColor="#313690"
         spacing={10}
         >
         <Img src ='/LOGO.png'></Img>

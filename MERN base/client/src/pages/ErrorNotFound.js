@@ -10,7 +10,6 @@ function ErrorNotFound() {
         justifyContent="center"
         alignItems="center"
         isDarkBackground
-        backgroundColor="#313690"
         >
         <Text>NOT FOUND 404</Text>
     </Background>

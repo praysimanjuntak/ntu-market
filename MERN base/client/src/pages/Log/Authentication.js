@@ -13,7 +13,6 @@ function Authentication() {
         justifyContent="center"
         alignItems="center"
         isDarkBackground
-        backgroundColor="#313690"
         >
         
     </Background>

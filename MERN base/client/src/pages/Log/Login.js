@@ -11,7 +11,6 @@ function Login() {
         justifyContent="center"
         alignItems="center"
         isDarkBackground
-        backgroundColor="#313690"
         >
         <Img src ='/LOGO.png'></Img>
         <FormControl>

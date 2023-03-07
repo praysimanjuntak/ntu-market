@@ -19,7 +19,6 @@ function ModalIntro() {
         justifyContent="center"
         alignItems="center"
         isDarkBackground
-        backgroundColor="#313690"
         spacing={5}
         >
         <Img src ='/LOGO.png'></Img>
