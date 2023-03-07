@@ -1,4 +1,4 @@
-import { getTest } from "./api/test";
+// import { getTest } from "./api/test";
 import Login from "./pages/Log/Login";
 import LoginSignUp from "./pages/Log/LoginSignUp";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -16,9 +16,9 @@ import Details from './pages/Product/Details'
 import Payment from './pages/Product/Payment';
 import Chat from './pages/Product/Chat';
 import ConfirmationBuy from './pages/Product/ConfirmationBuy'
-import SellerProfile from './pages/Profile/SellerProfile';
-import Listings from './components/Listings';
-import Reviews from './components/Reviews';
+// import SellerProfile from './pages/Profile/SellerProfile';
+// import Listings from './components/Listings';
+// import Reviews from './components/Reviews';
 import Listing from './pages/Listing/Listing';
 import ConfirmationList from './pages/Listing/ConfirmationList';
 import {ChakraProvider} from "@chakra-ui/react";
@@ -39,8 +39,8 @@ function App() {
           <Route path='/house' element={<House/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/myProfile' element={<MyProfile/>}>
-            <Route path='myListings' element={<Listings/>}/>
-            <Route path='myReviews' element={<Reviews/>}/>
+            {/* <Route path='myListings' element={<Listings/>}/> */}
+            {/* <Route path='myReviews' element={<Reviews/>}/> */}
           </Route>
           <Route path='/settings' element={<Settings/>}/>
           <Route path='/wallet' element={<Wallet/>}/>
