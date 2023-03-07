@@ -1,6 +1,6 @@
 import { Container, Flex, WrapItem, Heading } from "@chakra-ui/react";
 import Background from "../../components/Background";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/navbar";
 import Footer from "../../components/Footer";
 import TopPicture from "./Components/TopPicture";
 import ProfileBody from "./Components/ProfileBody";

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
-import PhishingAlert from '../components/PhishingAlert';
+import PhishingAlert from '../components/phishingalert';
 import ListingCard from '../components/ListingCard';
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import Background from "../components/Background";
 function Home(){

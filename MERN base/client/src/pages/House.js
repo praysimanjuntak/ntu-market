@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
-import PhishingAlert from '../components/PhishingAlert';
-import Categories from '../components/Categories';
+import PhishingAlert from '../components/phishingalert';
+import Categories from '../components/categories';
 import FeaturedItems from '../components/FeaturedItems';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
