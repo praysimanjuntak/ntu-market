@@ -19,9 +19,7 @@ import {
 import { HamburgerIcon, Search2Icon, BellIcon, EmailIcon, StarIcon } from '@chakra-ui/icons';
 import cart from '../media/shopping-cart.png'
 import { Link } from 'react-router-dom';
-
-
-
+//Navbar is used once users have logged in. Will be called header otherwise.
 function Navbar() {
 
   return (
@@ -30,7 +28,7 @@ function Navbar() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Show above='766px'>
             <Box>
-              <Link to='/'>
+              <Link to='/home'>
                 <img src={cart} alt="NTU Marketplace" height={50} width={50} />
               </Link>
             </Box>
