@@ -13,19 +13,19 @@ function ProfileSection(props) {
 
     const items = [
         {
-            title: "Living Room Sofa",
-            price: "$450",
+            title: "Microsoft Computer",
+            price: "$200",
             description:
-            "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
+            "Good Computer",
             getImageSrc: () => require("../../../media/anything.jpg"),
             favourited: true,
             buyer: false,
         },
         {
-            title: "Living Room Sofa",
-            price: "$450",
+            title: "Microsoft Computer II",
+            price: "$250",
             description:
-                "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
+                "Good Computer",
             getImageSrc: () => require("../../../media/anything.jpg"),
             favourited: true,
             buyer: false,
