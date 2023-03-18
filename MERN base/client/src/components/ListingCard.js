@@ -1,5 +1,13 @@
 import { Card, CardBody, Image, Stack, Text, Divider, CardFooter, Button, ButtonGroup, Heading } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 function ListingCard(props) {    
+    const [isEmptyButtons, setIsEmptyButtons] = useState(false);
+    const check = () => {
+        setIsEmptyButtons(props.buyer)
+    }
+    useEffect(()=>{
+        check();
+    });
     return(
         <>
         <Card maxW='sm'>
@@ -18,12 +26,12 @@ function ListingCard(props) {
                 </Text>
                 </Stack>
             </CardBody>
-            <Divider />
+            {isEmptyButtons && <Divider />}
             <CardFooter>
                 <ButtonGroup spacing='2'>
-                <Button variant='solid' colorScheme='blue'>
+                {props.buyer && <Button variant='solid' colorScheme='blue'>
                     Chat with buyer
-                </Button>
+                </Button>}
                 {!props.favourited && <Button variant='ghost' colorScheme='blue'>
                     Add to Favourites
                 </Button>}

@@ -12,6 +12,7 @@ function Wishlist(){
               "Any Description goes .",
             getImageSrc: () => require("../../src/media/anything.jpg"),
             favourited: true,
+            buyer: true,
         },
         {
             title: "Microsoft Computer",
@@ -20,6 +21,7 @@ function Wishlist(){
               "Any Description goes .",
             getImageSrc: () => require("../../src/media/anything.jpg"),
             favourited: true,
+            buyer: true,
         },
         {
             title: "Microsoft Computer",
@@ -28,6 +30,7 @@ function Wishlist(){
               "Any Description goes .",
             getImageSrc: () => require("../../src/media/anything.jpg"),
             favourited: true,
+            buyer: true,
         },
     ]
     return(
@@ -49,6 +52,7 @@ function Wishlist(){
                     description = {wish.description}
                     imageSrc={wish.getImageSrc()}
                     favourited = {wish.favourited}
+                    buyer={wish.buyer}
                     />))}
                 </HStack>
             </Container>

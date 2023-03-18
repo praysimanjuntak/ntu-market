@@ -15,6 +15,7 @@ function Home(){
           "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
         getImageSrc: () => require("../../src/media/any.jpg"),
         favourited: false,
+        buyer: true,
     },
     {
       title: "Living Room Sofa",
@@ -23,6 +24,7 @@ function Home(){
         "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
       getImageSrc: () => require("../../src/media/any.jpg"),
       favourited: false,
+      buyer: true,
     },
 
 ]
@@ -44,6 +46,8 @@ function Home(){
               title = {item.title}
               price = {item.price}
               description = {item.description}
+              buyer = {item.buyer}
+              favourited = {item.favourited}
               imageSrc={item.getImageSrc()}
             />
           ))}
