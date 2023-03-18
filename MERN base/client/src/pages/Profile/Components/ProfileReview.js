@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Avatar, Grid, GridItem, HStack } from "@chakra-ui/react";
+import { Accordion, Text, Grid, GridItem, HStack } from "@chakra-ui/react";
 import {StarIcon} from "@chakra-ui/icons";
 import Description from "./Description";
 import Review from"./Review";
@@ -33,14 +33,15 @@ function ProfileReview(){
         <>
         <Grid
             templateAreas={`"nav main"
-                            "nav main"`}
+            "nav main"`}
             gridTemplateRows={'50px 1fr 30px'}
             gridTemplateColumns={'150px 1fr'}
             h='800px'
-            gap='1'
+            gap='10'
             color='blackAlpha.700'
             fontWeight='bold'
             >
+            <Text align="left" fontSize="lg" fontFamily="san serif" >Review</Text>
             <GridItem pl='3' bg='white.300' area={'nav'}>
                 <Description
                     name = {profileItems.name}
