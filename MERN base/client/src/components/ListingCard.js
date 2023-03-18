@@ -1,7 +1,5 @@
 import { Card, CardBody, Image, Stack, Text, Divider, CardFooter, Button, ButtonGroup, Heading } from "@chakra-ui/react";
-// insert buyer page here
-// insert favourites page
-function ListingCard(props) {
+function ListingCard(props) {    
     return(
         <>
         <Card maxW='sm'>
@@ -26,9 +24,9 @@ function ListingCard(props) {
                 <Button variant='solid' colorScheme='blue'>
                     Chat with buyer
                 </Button>
-                <Button variant='ghost' colorScheme='blue'>
+                {!props.favourited && <Button variant='ghost' colorScheme='blue'>
                     Add to Favourites
-                </Button>
+                </Button>}
                 </ButtonGroup>
             </CardFooter>
         </Card>
