@@ -1,11 +1,29 @@
 import React from "react";
-import { Container } from "@chakra-ui/react";
+import { Container, HStack } from "@chakra-ui/react";
 import PhishingAlert from '../components/phishingalert';
 import ListingCard from '../components/ListingCard';
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import Background from "../components/Background";
 function Home(){
+  //fetch this as a json response. @ Jeremy
+  const items = [
+    {
+        title: "Living Room Sofa",
+        price: "$450",
+        description:
+          "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
+        getImageSrc: () => require("../../src/media/any.jpg"),
+    },
+    {
+      title: "Living Room Sofa",
+      price: "$450",
+      description:
+        "This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.",
+      getImageSrc: () => require("../../src/media/any.jpg"),
+  },
+
+]
     return(
       <>
       <Navbar/>
@@ -16,8 +34,19 @@ function Home(){
         mr='0'
         minWidth='100%'
           >
-          <PhishingAlert/>
-        <ListingCard />
+        <PhishingAlert/>
+        <HStack>
+          {items.map((item) => (
+            <ListingCard
+              key = {item.title}
+              title = {item.title}
+              price = {item.price}
+              description = {item.description}
+              imageSrc={item.getImageSrc()}
+            />
+          ))}
+        </HStack>
+
         </Container>
         
       <Footer/>
