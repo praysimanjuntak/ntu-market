@@ -6,6 +6,7 @@ import Navbar from "../components/navbar";
 function Notifications(){
     return(
         <>
+        {/* Need to know what this is for. Can show stats. */}
         <Navbar />
         <Container>
 
