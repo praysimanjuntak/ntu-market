@@ -9,6 +9,11 @@ const handleFindUser = async (req, res) => {
             .then(users => res.json(users))
             .catch(console.log);
             break;
+        case 'email':
+            await User.find({ email: parameter })
+            .then(users => res.json(users))
+            .catch(console.log);
+            break;
         default:
             res.status(400).json("Property is invalid");
             break;

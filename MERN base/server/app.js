@@ -14,6 +14,7 @@ const getItems = require('./controllers/getItems');
 const createUser = require('./controllers/createUser');
 const findUser = require('./controllers/findUser');
 const postItem = require('./controllers/postItem');
+const login = require('./controllers/login');
 
 // app 
 const app = express();
@@ -90,6 +91,7 @@ app.get("/get-items", getItems.handleGetItems);
 app.post("/create-user", createUser.handleCreateUser);
 app.post("/find-user", findUser.handleFindUser);
 app.post("/post-item", postItem.handlePostItem);
+app.post("/login", login.handleLogin);
 
 // port
 const port = process.env.PORT || 8080;

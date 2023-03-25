@@ -5,15 +5,12 @@ const handleCreateUser = async (req, res) => {
     if (!username || !password || !email) return res.status(400).json("Missing information")
 
     try {
-        const user = await User
-        .create({username, password, name, email, mobile})
-        .then(() => res.json("Successful insert"))
-        .catch(console.log)
-
-        return user.save();
+        await User.create({username, password, name, email, mobile})
+        return res.json("successful");
     } catch(e) {
         console.log(e);
-        res.status(400).json("Error in insert")
+        if (e.code === 11000) return res.status(400).json("duplicate")
+        else return res.status(400).json("Error in insert")
     }
 }
 
